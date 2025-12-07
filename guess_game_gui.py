@@ -40,7 +40,7 @@ def check_guess():
 
     attempts += 1
 
-    # إظهار الرقم اللي كتبه المستخدم
+    
     output.insert(tk.END, f"You entered: {guess}\n")
 
     guess_entry.delete(0, tk.END)
@@ -55,7 +55,6 @@ def check_guess():
         output.insert(tk.END, "Too low! Try higher.\n\n")
 
 
-# ---------------- GUI ---------------- #
 
 root = tk.Tk()
 root.title("Number Guessing Game")
@@ -81,3 +80,4 @@ output = tk.Text(root, height=15, width=50)
 output.pack(pady=10)
 
 root.mainloop()
+
